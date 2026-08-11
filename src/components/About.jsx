@@ -8,40 +8,29 @@ export default function About() {
       <div className="wrap">
         <div className="eyebrow">01 — about</div>
         <div className="about-grid">
-          <div className="about-label">how i work</div>
+          <div className="about-label"></div>
 
           <div className="about-blocks reveal" ref={blocksRef}>
             <div className="about-block">
-              <h3>Engineering mindset</h3>
+              <h2 className='section-title'>Get to know me </h2>
               <p>
-                I gravitate toward systems with real operational constraints — correctness,
-                performance, and deployability — over toy problems. I'm comfortable owning a
-                feature from design through production, not just the part that's easy to demo.
+                I am an engineering graduate from ESPRIT, with a background in computer science and a focus on software development. 
+                <br />
+                
+                I love creating things and solving mysteries, and I find that code is my language to do that.
+                <br />
+                Throughout my work, I had the opportunity to design and create various software applications, while exploring areas I find particularly interesting, such as DevOps and ML.
+                <br />
+                <br />
+                I am currently looking for my first opportunity as a Software Engineer. I want to work in an environment where I can build things that matter, where work feels more like creating than simply excecuting, and where I can keep learning, growing, and becoming better.
+                <br />
+                <br />
+                Aside from coding, I like doing nerdy things, I read, solve puzzles, create. I love learning about fashion and quite literally everything else.
               </p>
+              
             </div>
 
-            <div className="about-block">
-              <h3>How I approach problems</h3>
-              <p>
-                I like turning ambiguous requirements into something structured and measurable.
-                At Sofrecom, that meant formalizing "project health" — a fuzzy, subjective
-                judgment call — into a 9-axis assessment framework an ML pipeline could actually
-                score.
-              </p>
-              <ul>
-                <li>
-                  Comfortable moving across the stack: backend, frontend, data, and the
-                  infrastructure that ships it
-                </li>
-                <li>
-                  Bias toward applying ML pragmatically — precision and inference speed matter
-                  as much as model choice
-                </li>
-                <li>
-                  Prefer shipping a working, monitored version over a perfect but undeployed one
-                </li>
-              </ul>
-            </div>
+            
 
             <div className="about-block">
               <h3>Ownership</h3>
