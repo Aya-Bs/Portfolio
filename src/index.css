@@ -40,7 +40,13 @@ body{
   mask-image: radial-gradient(ellipse 90% 60% at 50% 0%, black 0%, transparent 70%);
 }
 a{ color: inherit; text-decoration:none; }
-ul{ list-style:none; }
+/* Reset lists globally only in nav/menu areas; keep default bullets for content lists */
+/* keep nav/menu lists unstyled */
+.nav .routes, .menu-list, .skills-grid ul { list-style: none; padding: 0; margin: 0; }
+
+/* Ensure unordered lists inside content paragraphs (like .log-copy) show bullets */
+.log-copy ul{ list-style: disc; margin-left: 20px; padding-left: 18px; }
+
 img{ max-width:100%; display:block; }
 section{ position:relative; z-index:1; }
 

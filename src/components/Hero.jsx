@@ -13,7 +13,7 @@ export default function Hero() {
             Full-Stack Software Engineer<span className="sep">/</span>DevOps Engineer<span className="sep">/</span>Applied AI
           </div>
           <p className="pitch">
-            From your imagination to a real product, I bring your ideas to life through design and code.
+            From your imagination to a real product,<br/> I bring your ideas to life through code and creativity.
           </p>
           <div className="cta-row">
             <a href="#projects" className="btn btn-solid">

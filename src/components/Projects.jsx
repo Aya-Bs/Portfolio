@@ -3,7 +3,7 @@ import { useReveal } from '../hooks/useReveal'
 const PROJECTS = [
   {
     id: 'PRJ · PMWA',
-    title: 'Project Management Web Application',
+    title: 'Lavoro - Project Management Web Application',
     org: 'Personal project',
     copy: `Most lightweight PM tools don't handle real team structure — roles, permissions, ownership. I built a collaborative platform with a proper role/permission model, team and project management, task tracking, and AI-assisted productivity features layered on top.`,
     tags: [{ label: 'Node.js' }, { label: 'React' }, { label: 'MongoDB' }],
@@ -22,7 +22,7 @@ function ProjectCard({ project }) {
     <article className="log-card">
       <div className="log-head">
         <div>
-          <div className="log-id">{project.id}</div>
+          {/* <div className="log-id">{project.id}</div> */}
           <div className="log-title-row">
             <span className="log-title">{project.title}</span>
           </div>

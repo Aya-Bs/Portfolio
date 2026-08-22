@@ -32,14 +32,7 @@ export default function About() {
 
             
 
-            <div className="about-block">
-              <h3>Ownership</h3>
-              <p>
-                I delivered SofAssess PM's ML recommendation pipeline through a full 4-sprint
-                Scrum cycle — from framework design to a production feature with measured
-                precision and latency, not just a notebook.
-              </p>
-            </div>
+           
           </div>
         </div>
       </div>
