@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import { useReveal } from '../hooks/useReveal'
 
 const EXPERIENCES = [
@@ -9,7 +10,7 @@ const EXPERIENCES = [
     
     primary: true,
     paragraphs: [
-      `Helped project managers at Sofrecom move from a manual project health assessment process to <strong>SofAssess PM</strong>, a digital platform that assesses project maturity across 9 axes and provides AI-assisted corrective recommendations.
+      `Helped project managers at Sofrecom move from a manual project health assessment process to <strong>SofAssess PM</strong>, a digital platform that assesses and analyzes project maturity across different aspects and uses AI to rank and provide the best corrective recommendations on weak areas.
 
       <ul>
         <li><strong>Designed the solution end-to-end</strong>, from product backlog and sprint planning to technology selection, architecture, development, testing, deployment, and delivery, under the supervision of the Product Owner.</li>
@@ -38,6 +39,10 @@ const EXPERIENCES = [
       { label: 'Semantic retrieval' },
       
     ],
+    remark:'My most serious project',
+    images :[
+     
+    ]
   },
   {
     id: 'EXP · EXP-02',
@@ -60,6 +65,10 @@ const EXPERIENCES = [
     ],
     metrics:[],
     tags: [{ label: 'NestJS' }, { label: 'Angular' }, { label: 'MongoDB' }],
+    remark:'Good idea, no time project',
+    images :[
+     
+    ]
   },
   {
     id: 'EXP · EXP-03',
@@ -84,6 +93,15 @@ const EXPERIENCES = [
     ],
     metrics:[],
     tags: [{ label: '.NET' }, { label: 'Angular' }, { label: 'PostgreSQL' }],
+    remark:'My first serious project',
+    images :[
+      {path: 'public/screenshots/todten/login.png'},
+      {path: 'public/screenshots/todten/home.png'},
+      {path: 'public/screenshots/todten/music.png'},
+      {path: 'public/screenshots/todten/musicdetalis.png'},
+      {path: 'public/screenshots/todten/movies.png'},
+      {path: 'public/screenshots/todten/audiobooks.png'},
+    ]
   },
 ]
 
@@ -93,6 +111,7 @@ function ExperienceCard({ exp }) {
       <div className="log-head">
         <div>
           {/* <div className="log-id">{exp.id}</div> */}
+           <div className="log-id">{exp.remark}</div> 
           <div className="log-title-row">
             <span className="log-title">{exp.title}</span>
             
@@ -134,6 +153,7 @@ function ExperienceCard({ exp }) {
 
 export default function Experiences() {
   const listRef = useReveal()
+  const [active, setActive] = useState(0)
 
   return (
     <section className="log-section" id="experience">
@@ -141,13 +161,28 @@ export default function Experiences() {
         <div className="eyebrow">02 — experience</div>
         <h2 className="section-title">Where I've worked</h2>
         <p className="section-intro">
-          Many internships, where I either collaborated or worked alone, on real ideas and needs.
+          Many internships, where I either collaborated or worked alone, on bringing real ideas to life and making clients happy .
         </p>
 
-        <div className="log-list reveal" ref={listRef}>
-          {EXPERIENCES.map((exp) => (
-            <ExperienceCard exp={exp} key={exp.id} />
-          ))}
+        <div className="timeline-layout reveal" ref={listRef}>
+          <nav className="timeline-rail" aria-label="Experience timeline">
+            <span className="timeline-line" aria-hidden="true" />
+            {EXPERIENCES.map((exp, i) => (
+              <button
+                type="button"
+                key={exp.id}
+                className={`timeline-item${i === active ? ' active' : ''}`}
+                onClick={() => setActive(i)}
+              >
+                <span className="timeline-org-name">{exp.org}</span>
+                <span className="timeline-marker">✦</span>
+              </button>
+            ))}
+          </nav>
+
+          <div className="timeline-content" key={EXPERIENCES[active].id}>
+            <ExperienceCard exp={EXPERIENCES[active]} />
+          </div>
         </div>
       </div>
     </section>

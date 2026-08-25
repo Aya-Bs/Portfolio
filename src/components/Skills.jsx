@@ -1,12 +1,12 @@
 import { useReveal } from '../hooks/useReveal'
 
 const SKILL_CATEGORIES = [
-  { name: 'Languages', items: ['Python', 'JavaScript', 'TypeScript', 'Java'] },
-  { name: 'Backend', items: ['Django', 'NestJS', 'Node.js', 'REST APIs'] },
-  { name: 'Frontend', items: ['React', 'Angular', 'HTML/CSS'] },
-  { name: 'Databases', items: ['PostgreSQL', 'MongoDB'] },
+  { name: 'Languages', items: ['Python', 'JavaScript',  'Java', 'C#'] },
+  { name: 'Backend', items: ['Django', 'Springboot', 'Node.js', '.NET', 'REST APIs'] },
+  { name: 'Frontend', items: ['React', 'Angular'] },
+  { name: 'Databases', items: ['PostgreSQL', 'MongoDB','MySQL'] },
   { name: 'AI / Machine Learning', items: ['LightGBM', 'LLM reranking', 'Semantic retrieval', 'NLP'] },
-  { name: 'DevOps / Cloud', items: ['Azure', 'API monitoring', 'CI/CD'] },
+  { name: 'DevOps / Cloud', items: ['Jenkins', 'Docker', 'Azure', 'SonarQube','Nexus','Grafana', 'Prometheus'] },
 ]
 
 export default function Skills() {
