@@ -1,4 +1,6 @@
 import { useReveal } from '../hooks/useReveal'
+import PortraitConstellation from './PortraitConstellation'
+import heroImg from '../assets/hero.png'
 
 
 export default function Hero() {
@@ -23,7 +25,9 @@ export default function Hero() {
           </div>
         </div>
 
-       
+        {/* <div className="hero-portrait">
+          <img src={Me} width={500} height={460} />
+        </div> */}
       </div>
     </section>
   )
