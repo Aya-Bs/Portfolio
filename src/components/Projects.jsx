@@ -1,9 +1,11 @@
 import { useState } from 'react'
 import { useReveal } from '../hooks/useReveal'
+import MediaSlideshow from './MediaSlideshow'
 
 const PROJECTS = [
   {
     id: 'PRJ · PMWA',
+    topic:'Full-Stack MERN',
     title: 'Lavoro - Project Management Web Application',
     org: 'Academic project',
     copy: `
@@ -16,11 +18,20 @@ const PROJECTS = [
     <li><strong>Implemented productivity features </strong>including Kanban boards and GitHub task export.</li>
     </ul>
     `,
+     link:'https://github.com/Aya-Bs/Lavoro/tree/Aya',
     tags: [{ label: 'Node.js' }, { label: 'React' }, { label: 'MongoDB' }],
-    remark:'My most organized project'
+    remark:'My most organized project',
+     media:
+      {
+        images :[
+          {path:'public/screenshots/lavoro/kanban.png'}
+        ],
+        videos:[]
+      }
   },
   {
     id: 'PRJ · JRNL',
+    topic:'AI Personal Journal',
     title: 'MindMuse - AI Personal Journal',
     org: 'Academic project',
     copy: `
@@ -32,11 +43,24 @@ const PROJECTS = [
     <li>Created an interactive visual garden with<strong> Three.js</strong> to visualize journal activity.</li>
     </ul>
     `,
+     link:'https://github.com/firaszn/Django-Project/tree/entry',
     tags: [{ label: 'Django' }, { label: 'NLP' }, { label: 'Sentiment analysis' }],
-    remark:'My coolest project'
+    remark:'My coolest project',
+     media:
+      {
+        images :[
+          {path:'public/screenshots/python-journal/journal-entry.png'},
+          {path:'public/screenshots/python-journal/garden.png'},
+          
+        ],
+        videos:[
+          {path:'public/screenshots/python-journal/demo.mp4'}
+        ]
+      }
   },
   {
     id: 'PRJ · DVPS',
+    topic:'CI/CD Pipeline',
     title: 'CI/CD Pipeline',
     org: 'Personal project',
     copy: [
@@ -49,12 +73,23 @@ const PROJECTS = [
     </ul>
     `
   ],
+    link:'https://github.com/Aya-Bs/Devops-project/tree/Aya',
     tags: [{ label: 'Jenkins' }, { label: 'SonarQube' }, { label: 'Docker' },{ label: 'Nexus' }, { label: 'ngrok' }, { label: 'Grafana' }],
-    remark:'My biggest huh?! moment'
+    remark:'My biggest huh?! moment',
+     media:
+      {
+        images :[
+          {path:'public/screenshots/devops/devops1.png'},
+          {path:'public/screenshots/devops/devops2.png'},
+          {path:'public/screenshots/devops/devops3.png'},
+        ],
+        videos:[]
+      }
 
   },
   {
     id: 'PRJ · MCRSV',
+    topic:'Microservices Architecture',
     title: 'Booki - Microservices-Based Book Sale App',
     org: 'Academic project',
     copy: [
@@ -68,8 +103,14 @@ const PROJECTS = [
     </ul>
     `
   ],
+   link:'https://github.com/Sarra-Sahli/Booki/tree/user-service',
     tags: [{ label: 'Springboot' }, { label: 'Angular' }, { label: 'Docker' }],
-    remark:'The project that made me cry'
+    remark:'The project that made me cry',
+     media:
+      {
+        images :[],
+        videos:[]
+      }
   }
 
 
@@ -78,6 +119,22 @@ const PROJECTS = [
 function ProjectCard({ project }) {
   return (
     <article className="log-card">
+      {project.link && (
+        <a
+          className="log-link-icon"
+          href={project.link}
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Open project link"
+          title="Open project link"
+        >
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+            <polyline points="15 3 21 3 21 9" />
+            <line x1="10" y1="14" x2="21" y2="3" />
+          </svg>
+        </a>
+      )}
       <div className="log-head">
         <div>
           {/* <div className="log-id">{project.id}</div> */}
@@ -104,6 +161,8 @@ function ProjectCard({ project }) {
             </span>
           ))}
         </div>
+
+        <MediaSlideshow media={project.media} />
       </div>
     </article>
   )
@@ -132,7 +191,7 @@ export default function Projects() {
                 className={`timeline-item${i === active ? ' active' : ''}`}
                 onClick={() => setActive(i)}
               >
-                <span className="timeline-org-name">{project.title}</span>
+                <span className="timeline-org-name">{project.topic}</span>
                 <span className="timeline-marker">✦</span>
               </button>
             ))}

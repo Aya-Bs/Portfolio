@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { useReveal } from '../hooks/useReveal'
+import MediaSlideshow from './MediaSlideshow'
 
 const EXPERIENCES = [
   {
@@ -40,9 +41,11 @@ const EXPERIENCES = [
       
     ],
     remark:'My most serious project',
-    images :[
-     
-    ]
+    media:
+      {
+        images :[],
+        videos:[]
+      }
   },
   {
     id: 'EXP · EXP-02',
@@ -66,9 +69,14 @@ const EXPERIENCES = [
     metrics:[],
     tags: [{ label: 'NestJS' }, { label: 'Angular' }, { label: 'MongoDB' }],
     remark:'Good idea, no time project',
-    images :[
-     
-    ]
+    media:
+      {
+        images :[],
+        videos:[]
+      }
+
+    
+    
   },
   {
     id: 'EXP · EXP-03',
@@ -94,14 +102,19 @@ const EXPERIENCES = [
     metrics:[],
     tags: [{ label: '.NET' }, { label: 'Angular' }, { label: 'PostgreSQL' }],
     remark:'My first serious project',
-    images :[
+    media:
+      {
+        images :[
       {path: 'public/screenshots/todten/login.png'},
       {path: 'public/screenshots/todten/home.png'},
       {path: 'public/screenshots/todten/music.png'},
-      {path: 'public/screenshots/todten/musicdetalis.png'},
+      {path: 'public/screenshots/todten/musicdetails.png'},
       {path: 'public/screenshots/todten/movies.png'},
       {path: 'public/screenshots/todten/audiobooks.png'},
-    ]
+    ],
+        videos:[]
+      }
+    
   },
 ]
 
@@ -145,7 +158,7 @@ function ExperienceCard({ exp }) {
           </div>
         )}
 
-       
+        <MediaSlideshow media={exp.media} />
       </div>
     </article>
   )
