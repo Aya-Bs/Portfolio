@@ -49,8 +49,8 @@ const PROJECTS = [
      media:
       {
         images :[
-          {path:'public/screenshots/python-journal/journal-entry.png'},
-          {path:'public/screenshots/python-journal/garden.png'},
+          {path:'https://res.cloudinary.com/nry1wpr0/image/upload/v1788195047/journal-entry.png'},
+          {path:'https://res.cloudinary.com/nry1wpr0/image/upload/v1788195090/garden.png'},
           
         ],
         videos:[
@@ -79,9 +79,9 @@ const PROJECTS = [
      media:
       {
         images :[
-          {path:'public/screenshots/devops/devops1.png'},
-          {path:'public/screenshots/devops/devops2.png'},
-          {path:'public/screenshots/devops/devops3.png'},
+          {path:'https://res.cloudinary.com/nry1wpr0/image/upload/v1788195025/devops1.png'},
+          {path:'https://res.cloudinary.com/nry1wpr0/image/upload/v1788195025/devops2.png'},
+          {path:'https://res.cloudinary.com/nry1wpr0/image/upload/v1788195025/devops3.png'},
         ],
         videos:[]
       }

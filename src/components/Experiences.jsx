@@ -45,7 +45,7 @@ const EXPERIENCES = [
       {
         images :[],
         videos:[
-          {path:'public/screenshots/sofrecom/Demo.mp4'},
+          {path:'https://res.cloudinary.com/nry1wpr0/video/upload/v1788197921/Demo.mp4'},
         ]
       }
   },
@@ -107,12 +107,12 @@ const EXPERIENCES = [
     media:
       {
         images :[
-      {path: 'public/screenshots/todten/login.png'},
-      {path: 'public/screenshots/todten/home.png'},
-      {path: 'public/screenshots/todten/music.png'},
-      {path: 'public/screenshots/todten/musicdetails.png'},
-      {path: 'public/screenshots/todten/movies.png'},
-      {path: 'public/screenshots/todten/audiobooks.png'},
+      {path: 'https://res.cloudinary.com/nry1wpr0/image/upload/v1788195052/login.png'},
+      {path: 'https://res.cloudinary.com/nry1wpr0/image/upload/v1788195083/home.png'},
+      {path: 'https://res.cloudinary.com/nry1wpr0/image/upload/v1788195085/music.png'},
+      {path: 'https://res.cloudinary.com/nry1wpr0/image/upload/v1788195084/musicdetails.png'},
+      {path: 'https://res.cloudinary.com/nry1wpr0/image/upload/v1788195061/movies.png'},
+      {path: 'https://res.cloudinary.com/nry1wpr0/image/upload/v1788195052/audiobooks.png'},
     ],
         videos:[]
       }
