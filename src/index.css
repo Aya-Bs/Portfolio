@@ -18,23 +18,23 @@
   --maxw: 1080px;
 }
 
-[data-theme="light"] {
+/* [data-theme="light"] {
   --bg: #EAF2FA;
   --bg-raised: #D9E8F5;
   --bg-raised-2: #CBDFF0;
 
-  --text: #780000;            /* burgundy, lighter than before, ~9.8:1 contrast */
+  --text: #780000;            
   --text-dim: #1D222D;
   --text-faint:#1D222D;
 
-  --accent: #C1121F;          /* same crimson as dark mode --text — the connective thread */
+  --accent: #C1121F;          
   --accent-dim: rgba(193, 18, 31, 0.55);
-  --accent-warm: #9C2B3B;     /* rose-merlot, between accent and text in weight */
+  --accent-warm: #9C2B3B;     
 
   --line: rgba(193, 18, 31, 0.16);
   --line-soft: rgba(193, 18, 31, 0.08);
   --nav-bg: rgba(234, 242, 250, 0.55);
-}
+} */
 
 *{ box-sizing: border-box; margin:0; padding:0; }
 html{ scroll-behavior:smooth; scroll-padding-top: 80px; max-width: 100%; overflow-x: hidden; }
