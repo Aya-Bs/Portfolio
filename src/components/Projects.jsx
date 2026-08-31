@@ -24,7 +24,7 @@ const PROJECTS = [
      media:
       {
         images :[
-          {path:'public/screenshots/lavoro/kanban.png'}
+          {path:'https://res.cloudinary.com/nry1wpr0/image/upload/v1788195030/kanban.png'}
         ],
         videos:[]
       }
@@ -54,7 +54,7 @@ const PROJECTS = [
           
         ],
         videos:[
-          {path:'public/screenshots/python-journal/demo.mp4'}
+          {path:'https://res.cloudinary.com/nry1wpr0/video/upload/v1788200015/Demo.mp4'}
         ]
       }
   },
