@@ -1,7 +1,7 @@
 import { useEffect, useRef } from 'react'
 
 // Curated set of subtle, abstract glyphs.
-const GLYPHS = ['✦', '✧', '಄', '○', '·', '+', '∿', '∘','♡','★','✿','₊⊹','๋࣭ ⭑','𓇼','⌖']
+const GLYPHS = ['✦', '✧', '಄', '○', '·', '+', '∿', '∘','♡','★','✿','₊⊹','๋࣭ ⭑','𓇼','⌖','˙ᵕ˙','﹫','#']
 
 const MAX_GLYPH_POOL = 40 // hard cap on concurrently-alive glyph nodes
 

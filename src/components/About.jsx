@@ -26,6 +26,9 @@ export default function About() {
                 <br />
                 <br />
                 Aside from coding, I like doing nerdy things, I read, solve puzzles, create. I love learning about fashion and quite literally everything else.
+                <br/>
+                <br/>
+                Oh, I dream of traveling the world, having the coolest wardrobe and owning a beach house. Small dreams, you see.
               </p>
               
             </div>

@@ -1,12 +1,12 @@
 import { useState } from 'react'
 import { useReveal } from '../hooks/useReveal'
-import MediaSlideshow from './MediaSlideshow'
+import MediaSlideshow from '../partials/MediaSlideshow'
 
 const EXPERIENCES = [
   {
     id: 'EXP · EXP-01',
     title: 'Software & ML Engineer Intern',
-    org: 'Orange Telecom - Sofrecom Tunisia',
+    org: 'Sofrecom Tunisia',
     dates: 'Feb 2026 → Jul 2026',
     
     primary: true,
@@ -44,7 +44,9 @@ const EXPERIENCES = [
     media:
       {
         images :[],
-        videos:[]
+        videos:[
+          {path:'public/screenshots/sofrecom/Demo.mp4'},
+        ]
       }
   },
   {
@@ -188,7 +190,7 @@ export default function Experiences() {
                 onClick={() => setActive(i)}
               >
                 <span className="timeline-org-name">{exp.org}</span>
-                <span className="timeline-marker">✦</span>
+                <span className="timeline-marker" aria-hidden="true" />
               </button>
             ))}
           </nav>

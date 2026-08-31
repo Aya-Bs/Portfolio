@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { useReveal } from '../hooks/useReveal'
-import MediaSlideshow from './MediaSlideshow'
+import MediaSlideshow from '../partials/MediaSlideshow'
 
 const PROJECTS = [
   {
@@ -192,7 +192,7 @@ export default function Projects() {
                 onClick={() => setActive(i)}
               >
                 <span className="timeline-org-name">{project.topic}</span>
-                <span className="timeline-marker">✦</span>
+                <span className="timeline-marker" aria-hidden="true" />
               </button>
             ))}
           </nav>

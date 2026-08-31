@@ -9,8 +9,8 @@ import Experiences from './components/Experiences'
 import Projects from './components/Projects'
 import Skills from './components/Skills'
 import Education from './components/Education'
-import CursorTrail from './components/CursorTrail'
-import Constellation from './components/Constellation'
+import CursorTrail from './partials/CursorTrail'
+import Constellation from './partials/Constellation'
 import { useActiveSection } from './hooks/useActiveSection'
 
 const SECTION_IDS = ['hero', 'about', 'experience', 'projects', 'skills', 'education']
