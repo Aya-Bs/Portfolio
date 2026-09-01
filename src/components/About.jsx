@@ -1,4 +1,6 @@
 import { useReveal } from '../hooks/useReveal'
+import ParticlePortrait from '../partials/ParticlePortrait'
+import Aya from '../assets/me.jpg'
 
 export default function About() {
   const blocksRef = useReveal()
@@ -9,7 +11,7 @@ export default function About() {
         <div className="eyebrow">01 — about</div>
         <div className="about-grid">
           <div className="about-label"></div>
-
+ <ParticlePortrait src={Aya} />
           <div className="about-blocks reveal" ref={blocksRef}>
             <div className="about-block">
               <h2 className='section-title'>Get to know me </h2>
@@ -32,11 +34,10 @@ export default function About() {
               </p>
               
             </div>
-
             
-
-           
+            
           </div>
+         
         </div>
       </div>
     </section>

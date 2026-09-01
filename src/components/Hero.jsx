@@ -23,7 +23,7 @@ export default function Hero() {
             From your imagination to a real product,<br/> I bring your ideas to life through code and creativity.
           </p>
           <div className="cta-row">
-            <a href="#projects" className="btn btn-solid">
+            <a href="mailto:aya.boukhriis@gmail.com" className="btn btn-solid-2">
               Let's Chat!
             </a>
            

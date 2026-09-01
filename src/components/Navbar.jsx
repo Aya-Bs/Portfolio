@@ -38,7 +38,7 @@ export default function Navbar() {
         </nav>
 
         <div className="nav-actions">
-           <button
+           {/* <button
             type="button"
             className="theme-toggle"
             onClick={toggleTheme}
@@ -62,11 +62,11 @@ export default function Navbar() {
                 <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
               </svg>
             )}
-          </button> 
-          <a href="/resume.pdf" className="btn" download>
+          </button>  */}
+          <a href="/public/Aya_Boukhris_CV.pdf" className="btn" download>
             ↓ resume
           </a>
-          <a href="#contact" className="btn btn-solid">
+          <a href="mailto:aya.boukhriis@gmail.com" className="btn btn-solid">
             contact
           </a>
           <button

@@ -24,9 +24,15 @@ const PROJECTS = [
      media:
       {
         images :[
-          {path:'https://res.cloudinary.com/nry1wpr0/image/upload/v1788195030/kanban.png'}
+          
         ],
-        videos:[]
+        videos:[
+          {path:'https://res.cloudinary.com/nry1wpr0/video/upload/v1788282814/lavoro1.mp4'},
+          {path:'https://res.cloudinary.com/nry1wpr0/video/upload/v1788282801/lavoro2.mp4'},
+          {path:'https://res.cloudinary.com/nry1wpr0/video/upload/v1788282805/lavoro3.mp4'},
+          {path:'https://res.cloudinary.com/nry1wpr0/video/upload/v1788282797/lavoro4.mp4'},
+          {path:'https://res.cloudinary.com/nry1wpr0/video/upload/v1788282800/lavoro5.mp4'},
+        ]
       }
   },
   {
